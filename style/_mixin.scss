@@ -1,0 +1,15 @@
+@mixin font-module($size, $weight, $height: false, $color:black) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    @if ($height) {
+        line-height: $height;
+    }
+}
+
+@mixin border-module($pixel, $color: black, $radius: false) {
+    border: 1px solid $color;
+    @if ($radius) {
+        border-radius: $radius;
+    }
+}
