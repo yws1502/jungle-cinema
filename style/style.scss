@@ -61,6 +61,66 @@
             }
             .item-info {
                 margin: 0 20px 18px;
+                div {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    dt, dd {
+                        @include font-module(13px, normal, 19px);
+                        display: inline-block;
+                    }
+                    dt {
+                        color: $gray-font;
+                        margin-right: 4px;
+                    }
+                }
+                .icon-star {
+                    float: right;
+                    dt::after {
+                        display: inline-block;
+                        content: "";
+                        background-image: url(../images/star_logo.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 14px;
+                        height: 14px;
+                        margin-left: 5px;
+                        vertical-align: -1px;
+                    }
+                }
+            }
+            a[class^=btn] {
+                @include font-module(14px, 500, 20px);
+                display: inline-block;
+                text-align: center;
+                width: 50%;
+                height: 41px;
+                line-height: 41px;
+                background-color: $gray-color;
+                border-top: 1px solid $border-color;
+            }
+            .btn-reserve {
+                border-bottom-left-radius: 10px;
+                &::after {
+                    float: right;
+                    content: "";
+                    width: 1px;
+                    height: 100%;
+                    background-color: $border-color;
+                }
+            }
+            .btn-teaser {
+                border-bottom-right-radius: 10px;
+                &::before {
+                    display: inline-block;
+                    content: "";
+                    background-image: url(../images/play_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 2px;
+                    vertical-align: -2px;
+                }
             }
         }
     }

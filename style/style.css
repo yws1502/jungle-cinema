@@ -93,4 +93,80 @@
 .container .item-list .item .item-info {
   margin: 0 20px 18px;
 }
+
+.container .item-list .item .item-info div {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.container .item-list .item .item-info div dt, .container .item-list .item .item-info div dd {
+  font-size: 13px;
+  font-weight: normal;
+  color: black;
+  line-height: 19px;
+  display: inline-block;
+}
+
+.container .item-list .item .item-info div dt {
+  color: #828282;
+  margin-right: 4px;
+}
+
+.container .item-list .item .item-info .icon-star {
+  float: right;
+}
+
+.container .item-list .item .item-info .icon-star dt::after {
+  display: inline-block;
+  content: "";
+  background-image: url(../images/star_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  vertical-align: -1px;
+}
+
+.container .item-list .item a[class^=btn] {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: 41px;
+  line-height: 41px;
+  background-color: #F2F2F2;
+  border-top: 1px solid #BFBFBF;
+}
+
+.container .item-list .item .btn-reserve {
+  border-bottom-left-radius: 10px;
+}
+
+.container .item-list .item .btn-reserve::after {
+  float: right;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #BFBFBF;
+}
+
+.container .item-list .item .btn-teaser {
+  border-bottom-right-radius: 10px;
+}
+
+.container .item-list .item .btn-teaser::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../images/play_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  vertical-align: -2px;
+}
 /*# sourceMappingURL=style.css.map */
