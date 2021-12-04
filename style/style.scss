@@ -37,9 +37,10 @@
     .item-list {
         @include border-module(1px, $border-color, 10px);
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        gap: 23px;
         background-color: #fff;
-        padding: 26px;
+        padding: 25px;
         .item {
             @include border-module(1px, $border-color, 10px);
             width: 220px;
@@ -49,6 +50,7 @@
                 margin: 20px 20px 0;
                 .item-image {
                     max-width: 180px;
+                    max-height: 250px;
                     border-radius: 10px;
                     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                     margin-bottom: 12px;
@@ -122,6 +124,86 @@
                     vertical-align: -2px;
                 }
             }
+        }
+    }
+}
+
+// footer
+footer {
+    background-color: $gray-color;
+    .footer-container {
+        position: relative;
+        overflow: hidden;
+        width: 1189px;
+        margin: 0 auto;
+        .company-title {
+            @include font-module(22px, bold, 26px);
+            display: block;
+            padding-top: 50px;
+            &::after {
+                display: block;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: $border-color;
+                margin: 40px 0;
+            }
+        }
+        .company-info {
+            float: left;
+            margin-bottom: 38px;
+            dt {
+                @include font-module(14px, 700, 20px);
+                margin-right: 5px;
+                float: left;
+            }
+            dd {
+                @include font-module(14px, 500, 20px);
+                float: left;
+            }
+            dd::after {
+                display: inline-block;
+                content: "";
+                height: 21px;
+                width: 1px;
+                background-color: $border-color;
+                vertical-align: -5px;
+                margin: 0 10px;
+            }
+            dd:last-child::after {
+                display: none;
+            }
+        }
+        .sns-list {
+            position: absolute;
+            top: 56px;
+            right: 0;
+            display: flex;
+            gap: 25px;
+            [class^="icon"] {
+                display: inline-block;
+                content: "";
+                width: 20px;
+                height: 20px;
+                font-size: 1px;
+                text-indent: -9999px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icon-twitter {
+                background-image: url(../images/twitter.png);
+            }
+            .icon-insta {
+                background-image: url(../images/instagram.png);
+            }
+            .icon-facebook {
+                background-image: url(../images/facebook.png);
+            }
+        }
+        .copy-right {
+            @include font-module(14px, 700, 20px);
+            float: right;
+            margin-bottom: 38px;
         }
     }
 }
