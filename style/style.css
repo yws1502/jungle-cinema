@@ -4,6 +4,22 @@
           box-sizing: border-box;
 }
 
+.skip-nav a {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  background-color: #333;
+  color: white;
+  width: 300px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.skip-nav a:active,
+.skip-nav a:focus {
+  top: 0;
+}
+
 .container {
   border: 1px solid #BFBFBF;
   border-radius: 10px;
@@ -124,6 +140,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   width: 140px;
+  vertical-align: -3px;
 }
 
 .container .item-list .item .item-info .icon-star {

@@ -7,6 +7,23 @@
     box-sizing: border-box;
 }
 
+.skip-nav a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    background-color: #333;
+    color: white;
+    width: 300px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.skip-nav a:active,
+.skip-nav a:focus {
+    top: 0;
+}
+
+
 // main section
 .container {
     @include border-module(1px, $border-color, 10px);
@@ -78,6 +95,7 @@
                     &:last-child dd {
                         @include sl-ellipsis();
                         width: 140px;
+                        vertical-align: -3px;
                     }
                 }
                 .icon-star {
