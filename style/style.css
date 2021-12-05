@@ -84,6 +84,10 @@
 }
 
 .container .item-list .item .item-link .item-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 16px;
   font-weight: 900;
   color: black;
@@ -112,6 +116,14 @@
 .container .item-list .item .item-info div dt {
   color: #828282;
   margin-right: 4px;
+}
+
+.container .item-list .item .item-info div:last-child dd {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 140px;
 }
 
 .container .item-list .item .item-info .icon-star {
