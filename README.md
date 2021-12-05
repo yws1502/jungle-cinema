@@ -1,6 +1,7 @@
 # jungle-cinema
+url : https://yws1502.github.io/jungle-cinema/
 
-## 회고 및 배운점
+## 회고
 
 ### scss 적용하기
 - scss의 다양한 기능을 경험할 수 있었다.
