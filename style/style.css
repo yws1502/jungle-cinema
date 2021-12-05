@@ -290,4 +290,13 @@ footer .footer-container .copy-right {
   float: right;
   margin-bottom: 38px;
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 820px;
+  }
+  .footer-container {
+    max-width: 820px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

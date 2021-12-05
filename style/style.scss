@@ -212,3 +212,13 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .container {
+        max-width: 820px;
+    }
+
+    .footer-container {
+        max-width: 820px;
+    }
+}
